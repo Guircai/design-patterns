@@ -1,0 +1,28 @@
+design-patterns
+    behavioral(行为型模式)
+        chain---职责链模式：Filter、维护链条+游标+递归
+        command---命令模式：Controller、Service、Dao
+        interpreter---解释器模式：语法分析，大解析器组合了很多小解释器，进行语法解析
+        iterator---迭代器模式：自定义遍历算法，自己本类的迭代器遍历自己本类里面的集合
+        mediator---中介者模式：所有类都引入一个类的对象，通过这一个对象调用
+        memento---备忘录模式：把复杂对象的关键属性抽取出来进行保存
+        observer---观察者模式：把所有观察者List起来，然后foreach调用
+        state---状态模式：和策略很像，状态要维护状态流转
+        strategy---策略模式：每一种算法封装成一个策略，别人-->策略对象.方法调用()
+        template---模板方法模式：父类定义了一个大方法，里面调用了一堆小方法步骤，小方法步骤子类实现即可
+        visitor---访问者模式：小爱AI音箱，CPU、Disk都能被升级包升级
+    creational(创建型模式)
+        ★builder---建造者模式：每一个建造细节都可以传入，但是都不是必须，如果是必须，就构造器强制传入
+        ★factory---工厂模式：
+            abstractfactory(简单工厂|一个方法)：if-else 判断创造对象，产品线单一
+            factroymethod(抽象工厂|很多方法)：每个产品一个方法就行
+        prototype---原型模式：快速克隆一个自己
+        ★singleton---单例模式：保证一个对象
+    structural(结构型模式)
+        adapter---适配器模式：连接两个不同的接口
+        bridge---桥接模式：连接同一个东西的两个不同维度
+        composite---组合模式：动态代理+cglib
+        decorator---装饰模式：静态代理=装饰，被装饰的对象传入
+        facade---外观模式：把多个类的多个方法，合到一个类里面引用
+        flyweight---享元模式：将原对象通过池技术共享
+        proxy---代理模式：a里面属性有b(a)对象就是组合
